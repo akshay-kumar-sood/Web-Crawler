@@ -20,10 +20,48 @@ A multithreaded web crawler built in Java that crawls web pages up to a user-def
 - URL Deduplication — prevents the same URL from being crawled multiple times
 - Multithreaded Task Execution — processes multiple URLs concurrently
 
+## Running the Project
+
+### Linux
+
+```text
+WebCrawler/
+├── WebCrawler.jar
+└── run.sh
+```
+
+Double-click `run.sh` and select **Run in Terminal**.
+
+### Windows
+
+```text
+WebCrawler/
+├── WebCrawler.jar
+└── run.bat
+```
+Double-click `run.bat` to start the crawler.
+
+
 ## High-Level Design
 
 ![High Level Design](docs/hld.png)
 
-## Low-Level Design
+## Screenshots
 
-![Low Level Design](docs/lld.png)
+### Console input
+![Crawler Execution](docs/console.png)
+
+### Report File
+![Crawler Report](docs/report.png)
+
+### Summary
+![Crawler Report](docs/summary.png)
+
+## Crawling Notice
+
+**Not all websites allow automated crawling. Always check a website's
+`robots.txt` Terms of Service, and applicable laws before crawling.**
+
+For testing and learning purposes, this project can be used with:
+
+https://books.toscrape.com/
